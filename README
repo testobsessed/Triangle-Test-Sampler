@@ -1,0 +1,37 @@
+
+===========================
+The Tests
+---------
+Feature: Handles a simple Equilateral
+Input:  1, 1, 1
+Verify: the app draws the triangle and identifies it as "Equilateral"
+
+Feature: Handles a simple Right
+Input: 3, 4, 5
+Verify: the app draws the triangle and identifies it as "Right"
+
+Feature: Handles a simple Isosceles
+Input: 4, 4, 5
+Verify: the app draws the triangle and identifies it as "Isosceles"
+
+Feature: Handles a simple Scalene
+Input: 4, 5, 6
+Verify: the app draws the triangle and identifies it as "Scalene"
+
+Feature: Handles Invalid with a 0-length side
+Input: 0, 4, 5
+Verify: the app does not draw the triangle and reports "Invalid"
+
+Feature: Handles Invalid where the longest side is longer than the sum of the other two sides
+Input: 1, 4, 6
+Verify: the app does not draw the triangle and reports "Invalid"
+
+Feature: Draws obtuse triangles correctly on the canvas. (Known bug. Test will fail.)
+Input: 2, 5, 6
+Verify: the app draws the triangle entirely within the canvas.
+
+These tests cover the most basic expectations of the triangle engine. There are, of course, other interesting tests for triangle: invalid inputs, decimal values, negative values, very large values, and various other configurations of invalid triangles & valid triangle with different angles. 
+
+There are also potentially interesting tests one could run to characterize the behavior of the app as a whole: varying timing to see its affect on history, assessing behavior with numerous simultaneous sessions, etc. However, additional tests are left as an exercise for the reader.
+
+
