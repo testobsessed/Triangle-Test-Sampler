@@ -1,0 +1,61 @@
+*** Settings ***
+Library  SeleniumLibrary
+
+*** Test Cases ***
+
+Handles a simple Equilateral
+    Input values 1, 1, 1
+    Verify triangle is identified as "Equilateral"
+
+Handles a simple Right
+    Input values 3, 4, 5
+    Verify triangle is identified as "Right"
+
+Handles a simple Scalene
+    Input values 4, 5, 6
+    Verify triangle is identified as "Scalene"
+
+Handles a Scalene with floating point
+    Input values 4.2, 5.6, 6.1
+    Verify triangle is identified as "Scalene"
+
+Handles Invalid with a 0-length side
+    Input values 0, 4, 5
+    Verify triangle is identified as "Invalid"
+
+Handles Invalid where the longest side is longer than the sum of the other two sides
+    Input values 1, 4, 6
+    Verify triangle is identified as "Invalid"
+
+Draws obtuse triangles correctly on the canvas
+    [Tags]  failing
+    Input values 2, 5, 6
+    Verify triangle is identified as "Scalene"
+    Verify triangle is drawn inside canvas
+
+*** Settings ***
+Suite Setup         Enter
+Suite Teardown        Exit
+
+*** Keywords ***
+Enter
+    Open Browser  http://practice.agilistry.com/triangle
+    Set Selenium Speed  0.75
+    Maximize Browser Window
+
+Exit
+    Close Browser
+
+Input values ${side1}, ${side2}, ${side3}
+    Input Text  triangle_side1  ${side1}
+    Input Text  triangle_side2  ${side2}
+    Input Text  triangle_side3  ${side3}
+
+Verify triangle is identified as "${expected}"
+    ${actual} =  Get Text  triangle_type
+    Should Be Equal  ${actual}  ${expected}
+
+Verify triangle is drawn inside canvas
+    # Note that this is not nearly as good a verification as the Ruby implementation because it does not test the upper bound
+    ${coord_as_string} =  Get Text  //div[@id='triangles_list']/div[contains(@class, 'triangle_row')][1]/div[contains(@class, 'triangle_data_cell')][5]
+    Should Match Regexp  ${coord_as_string}  \\((\\d+),(\\d+)\\) \\((\\d+),(\\d+)\\) \\((\\d+),(\\d+)\\)
