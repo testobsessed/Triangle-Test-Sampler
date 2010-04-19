@@ -19,5 +19,5 @@ $triangle = TrianglePage.new(selenium_driver)
 
 # "after all"
 at_exit do
-  # selenium_driver.close_current_browser_session
+  selenium_driver.close_current_browser_session
 end
