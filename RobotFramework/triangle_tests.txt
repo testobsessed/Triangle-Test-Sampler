@@ -1,6 +1,3 @@
-*** Settings ***
-Library  SeleniumLibrary
-
 *** Test Cases ***
 
 Handles a simple Equilateral
@@ -34,6 +31,8 @@ Draws obtuse triangles correctly on the canvas
     Verify triangle is drawn inside canvas
 
 *** Settings ***
+Library  SeleniumLibrary
+Library  CoordinateCheck
 Suite Setup         Enter
 Suite Teardown        Exit
 
@@ -58,4 +57,5 @@ Verify triangle is identified as "${expected}"
 Verify triangle is drawn inside canvas
     # Note that this is not nearly as good a verification as the Ruby implementation because it does not test the upper bound
     ${coord_as_string} =  Get Text  //div[@id='triangles_list']/div[contains(@class, 'triangle_row')][1]/div[contains(@class, 'triangle_data_cell')][5]
-    Should Match Regexp  ${coord_as_string}  \\((\\d+),(\\d+)\\) \\((\\d+),(\\d+)\\) \\((\\d+),(\\d+)\\)
+    ${in_range} =  coordsInRange  ${coord_as_string}
+    Should Be True  ${in_range}  Coordinates out of range ${coord_as_string}
