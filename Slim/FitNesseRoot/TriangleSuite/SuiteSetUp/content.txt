@@ -1,3 +1,6 @@
+!|import               |
+|org.triangleTests.slim|
+
 !|Library      |
 |SeleniumDriver|
 

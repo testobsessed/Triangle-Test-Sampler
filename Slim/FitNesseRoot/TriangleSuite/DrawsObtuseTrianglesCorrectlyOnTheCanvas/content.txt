@@ -1,0 +1,4 @@
+!|script                                 |
+|Input values                    |2||5||6|
+|Verify triangle is identified as|Scalene|
+|Verify triangle is drawn inside canvas  |

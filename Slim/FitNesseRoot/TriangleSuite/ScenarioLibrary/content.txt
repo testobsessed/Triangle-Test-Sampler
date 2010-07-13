@@ -1,8 +1,12 @@
-|scenario  |Input values  |side1||side2||side3|
+!|scenario |Input values  |side1||side2||side3|
 |input text|triangle_side1|     |@side1       |
 |input text|triangle_side2|     |@side2       |
 |input text|triangle_side3|     |@side3       |
 
-|scenario|Verify triangle is identified as|triangleType                |
-|ensure  |verify text                     |triangle_type||@triangleType|
-|show    |get text                        |triangle_type               |
+!|scenario|Verify triangle is identified as|triangleType                |
+|show     |get text                        |triangle_type               |
+|ensure   |verify text                     |triangle_type||@triangleType|
+
+!|scenario|Verify triangle is drawn inside canvas|
+|show     |coordinates                           |
+|ensure   |coordinates are valid                 |
