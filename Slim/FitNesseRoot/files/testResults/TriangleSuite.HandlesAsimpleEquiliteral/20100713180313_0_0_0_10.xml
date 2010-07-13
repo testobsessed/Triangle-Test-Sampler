@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20100303</FitNesseVersion>
+  <rootPath>HandlesAsimpleEquiliteral</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>10</exceptions>
+    </counts>
+    <content><![CDATA[<table border="1" cellspacing="0" _TABLENUMBER=3312740018351884584>
+<tr><td>scenario</td>
+<td>Input values</td>
+<td>@side1</td>
+<td>&nbsp;</td>
+<td>@side2</td>
+<td>&nbsp;</td>
+<td>@side3</td>
+</tr>
+<tr><td>Input Text</td>
+<td>triangle_side1</td>
+<td>&nbsp;</td>
+<td colspan="4">@side1</td>
+</tr>
+<tr><td>Input Text</td>
+<td>triangle_side2</td>
+<td>&nbsp;</td>
+<td colspan="4">@side3</td>
+</tr>
+<tr><td>Input Text</td>
+<td>triangle_side3</td>
+<td>&nbsp;</td>
+<td colspan="4">@side3</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=1233242924861899911>
+<tr><td>scenario</td>
+<td>Verify triangle is identified as</td>
+<td colspan="3">@triangleType</td>
+</tr>
+<tr><td>check</td>
+<td>Get Text</td>
+<td>triangle_type</td>
+<td>&nbsp;</td>
+<td>@triangleType</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6324158497741716478>
+<tr><td>script</td>
+<td colspan="5">SeleniumDriver <span class="error">Could not invoke constructor for SeleniumDriver[0]</span></td>
+</tr>
+<tr><td class=fail>Input values</td>
+<td class=fail>1</td>
+<td class=fail>&nbsp;</td>
+<td class=fail>1</td>
+<td class=fail>&nbsp;</td>
+<td class=fail>1</td>
+<TD class=fail><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('8164532183660621878');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img8164532183660621878"/>
+	</a>
+	<span id="test_status" class=fail>Scenario</span>
+	<div class="hidden" id="8164532183660621878"><table border="1" cellspacing="0" _TABLENUMBER=2746086068733536349 table_name="scriptTable_2_1/scriptTable_0">
+<tr><td>scenario</td>
+<td>Input values</td>
+<td>@side1</td>
+<td>&nbsp;</td>
+<td>@side2</td>
+<td>&nbsp;</td>
+<td>@side3</td>
+</tr>
+<tr><td>Input Text <span class="error">The instance scriptTableActor. does not exist</span></td>
+<td>triangle_side1</td>
+<td>&nbsp;</td>
+<td colspan="4">@side1</td>
+</tr>
+<tr><td>Input Text <span class="error">The instance scriptTableActor. does not exist</span></td>
+<td>triangle_side2</td>
+<td>&nbsp;</td>
+<td colspan="4">@side3</td>
+</tr>
+<tr><td>Input Text <span class="error">The instance scriptTableActor. does not exist</span></td>
+<td>triangle_side3</td>
+<td>&nbsp;</td>
+<td colspan="4">@side3</td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=fail>Verify triangle is identified as</td>
+<td colspan="5" class=fail>Equilateral</td>
+<TD class=fail><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('2398112944803630708');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2398112944803630708"/>
+	</a>
+	<span id="test_status" class=fail>Scenario</span>
+	<div class="hidden" id="2398112944803630708"><table border="1" cellspacing="0" _TABLENUMBER=2267145999851457829 table_name="scriptTable_2_2/scriptTable_1">
+<tr><td>scenario</td>
+<td>Verify triangle is identified as</td>
+<td colspan="3">@triangleType</td>
+</tr>
+<tr><td>check</td>
+<td>Get Text</td>
+<td>triangle_type</td>
+<td>&nbsp;</td>
+<td>@triangleType <span class="error">The instance scriptTableActor. does not exist</span></td>
+</tr>
+</table></div>
+</div></TD></tr>
+</table>
+]]></content>
+    <relativePageName>HandlesAsimpleEquiliteral</relativePageName>
+    
+        <tables>
+            <table>
+        <name>scenarioTable_0</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Input values]]></col>
+                    <col><![CDATA[@side1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side2]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Input Text]]></col>
+                    <col><![CDATA[triangle_side1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Input Text]]></col>
+                    <col><![CDATA[triangle_side2]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Input Text]]></col>
+                    <col><![CDATA[triangle_side3]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_1</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Verify triangle is identified as]]></col>
+                    <col><![CDATA[@triangleType]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[Get Text]]></col>
+                    <col><![CDATA[triangle_type]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@triangleType]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+                    <col><![CDATA[SeleniumDriver error(Could not invoke constructor for SeleniumDriver[0])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Input values]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[fail(scenario:scriptTable_2_1/scriptTable_0)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Verify triangle is identified as]]></col>
+                    <col><![CDATA[Equilateral]]></col>
+                    <col><![CDATA[fail(scenario:scriptTable_2_2/scriptTable_1)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2_1/scriptTable_0</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Input values]]></col>
+                    <col><![CDATA[@side1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side2]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Input Text error(The instance scriptTableActor. does not exist)]]></col>
+                    <col><![CDATA[triangle_side1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Input Text error(The instance scriptTableActor. does not exist)]]></col>
+                    <col><![CDATA[triangle_side2]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Input Text error(The instance scriptTableActor. does not exist)]]></col>
+                    <col><![CDATA[triangle_side3]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_2_2/scriptTable_1</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Verify triangle is identified as]]></col>
+                    <col><![CDATA[@triangleType]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[check]]></col>
+                    <col><![CDATA[Get Text]]></col>
+                    <col><![CDATA[triangle_type]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@triangleType error(The instance scriptTableActor. does not exist)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_0, make, scriptTableActor, SeleniumDriver]]]></instruction>
+        <slimResult><![CDATA[!error:Could not invoke constructor for SeleniumDriver[0]]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_0</instructionId>
+          <col>1</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[!error:Could not invoke constructor for SeleniumDriver[0]]]></actual>
+                              <expected><![CDATA[SeleniumDriver]]></expected>
+                              <evaluationMessage><![CDATA[SeleniumDriver error(Could not invoke constructor for SeleniumDriver[0])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_1/scriptTable_0_0, call, scriptTableActor, InputText, triangle_side1, @side1]]]></instruction>
+        <slimResult><![CDATA[!error:The instance scriptTableActor. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[!error:The instance scriptTableActor. does not exist]]></actual>
+                              <expected><![CDATA[Input Text]]></expected>
+                              <evaluationMessage><![CDATA[Input Text error(The instance scriptTableActor. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_1/scriptTable_0_1, call, scriptTableActor, InputText, triangle_side2, @side3]]]></instruction>
+        <slimResult><![CDATA[!error:The instance scriptTableActor. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_1</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_1</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[!error:The instance scriptTableActor. does not exist]]></actual>
+                              <expected><![CDATA[Input Text]]></expected>
+                              <evaluationMessage><![CDATA[Input Text error(The instance scriptTableActor. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_1/scriptTable_0_2, call, scriptTableActor, InputText, triangle_side3, @side3]]]></instruction>
+        <slimResult><![CDATA[!error:The instance scriptTableActor. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_2</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_2</instructionId>
+          <col>3</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_1/scriptTable_0_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[!error:The instance scriptTableActor. does not exist]]></actual>
+                              <expected><![CDATA[Input Text]]></expected>
+                              <evaluationMessage><![CDATA[Input Text error(The instance scriptTableActor. does not exist)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_2_2/scriptTable_1_0, call, scriptTableActor, GetText, triangle_type]]]></instruction>
+        <slimResult><![CDATA[!error:The instance scriptTableActor. does not exist]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_2/scriptTable_1_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[!error:The instance scriptTableActor. does not exist]]></actual>
+                              <expected><![CDATA[@triangleType]]></expected>
+                              <evaluationMessage><![CDATA[@triangleType error(The instance scriptTableActor. does not exist)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_2_2/scriptTable_1_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

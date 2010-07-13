@@ -1,0 +1,3 @@
+!|script                                     |
+|Input values                    |1 | |1 | |1|
+|Verify triangle is identified as|Equilateral|

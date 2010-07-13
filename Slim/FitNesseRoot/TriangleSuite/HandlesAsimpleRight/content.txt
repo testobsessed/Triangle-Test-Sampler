@@ -1,0 +1,3 @@
+!|script                                 |
+|Input values                    |3||4||5|
+|Verify triangle is identified as|Right  |

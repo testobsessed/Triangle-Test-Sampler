@@ -1,0 +1,6 @@
+!define TEST_SYSTEM {slim}
+
+!path classes
+!path lib/*.jar
+
+!contents -R2 -g -p -f -h

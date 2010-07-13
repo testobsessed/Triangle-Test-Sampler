@@ -1,0 +1,8 @@
+!|Library      |
+|SeleniumDriver|
+
+!|script                                                            |
+|start selenium server                                              |
+|open browser      |firefox||http://practice.agilistry.com/triangle/|
+|set selenium speed|1000                                            |
+|maximize browser window                                            |

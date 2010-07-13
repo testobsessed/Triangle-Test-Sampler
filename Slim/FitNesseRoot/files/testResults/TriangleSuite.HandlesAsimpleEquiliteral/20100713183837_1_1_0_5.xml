@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20100303</FitNesseVersion>
+  <rootPath>HandlesAsimpleEquiliteral</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>5</exceptions>
+    </counts>
+    <content><![CDATA[<div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('2386250800800015154');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2386250800800015154"/>
+	</a>
+&nbsp;<span class="meta">Scenario Libraries </span>
+	<div class="hidden" id="2386250800800015154"><div class="included">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('3035937441176449164');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img3035937441176449164"/>
+	</a>
+&nbsp;<span class="meta">Included page: <a href="TriangleSuite.ScenarioLibrary">.TriangleSuite.ScenarioLibrary</a> <a href="TriangleSuite.ScenarioLibrary?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="3035937441176449164"><table border="1" cellspacing="0" _TABLENUMBER=1708110578504511043>
+<tr><td>scenario</td>
+<td>Input values</td>
+<td>@side1</td>
+<td>&nbsp;</td>
+<td>@side2</td>
+<td>&nbsp;</td>
+<td>@side3</td>
+</tr>
+<tr><td>input text</td>
+<td>triangle_side1</td>
+<td>&nbsp;</td>
+<td colspan="4">@side1</td>
+</tr>
+<tr><td>input text</td>
+<td>triangle_side2</td>
+<td>&nbsp;</td>
+<td colspan="4">@side3</td>
+</tr>
+<tr><td>input text</td>
+<td>triangle_side3</td>
+<td>&nbsp;</td>
+<td colspan="4">@side3</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=6845607027913547846>
+<tr><td>scenario</td>
+<td>Verify triangle is identified as</td>
+<td colspan="3">@triangleType</td>
+</tr>
+<tr><td>ensure</td>
+<td>verify text</td>
+<td>triangle_type</td>
+<td>&nbsp;</td>
+<td>@triangletype</td>
+</tr>
+<tr><td>show</td>
+<td>get text</td>
+<td colspan="3">triangle_type</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('7295408761252889896');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img7295408761252889896"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="TriangleSuite.SetUp">.TriangleSuite.SetUp</a> <a href="TriangleSuite.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="7295408761252889896"><table border="1" cellspacing="0" _TABLENUMBER=7810536326879462251>
+<tr><td>Library</td>
+</tr>
+<tr><td><span class="pass">SeleniumDriver</span></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="test_exceptions1"><H3> <span class="fail">Exceptions</span></H3><br/><a name="scriptTable_3_1/scriptTable_1_1"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('1935884995685566344');"><img src="/files/images/collapsableClosed.gif" class="left" id="img1935884995685566344"/></a>&nbsp;<span class="meta">scriptTable_3_1/scriptTable_1_1 </span>
+
+	<div class="hidden" id="1935884995685566344"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at SeleniumDriver.getText(SeleniumDriver.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:17)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:636)
+</pre></div>
+</div><a name="scriptTable_3_1/scriptTable_1_0"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('8256161237172005412');"><img src="/files/images/collapsableClosed.gif" class="left" id="img8256161237172005412"/></a>&nbsp;<span class="meta">scriptTable_3_1/scriptTable_1_0 </span>
+
+	<div class="hidden" id="8256161237172005412"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at SeleniumDriver.getText(SeleniumDriver.java:36)
+	at SeleniumDriver.verifyText(SeleniumDriver.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:17)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:636)
+</pre></div>
+</div><a name="scriptTable_3_0/scriptTable_0_2"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('5568893260895729567');"><img src="/files/images/collapsableClosed.gif" class="left" id="img5568893260895729567"/></a>&nbsp;<span class="meta">scriptTable_3_0/scriptTable_0_2 </span>
+
+	<div class="hidden" id="5568893260895729567"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at SeleniumDriver.inputText(SeleniumDriver.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:17)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:636)
+</pre></div>
+</div><a name="scriptTable_3_0/scriptTable_0_0"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('8328080725174372717');"><img src="/files/images/collapsableClosed.gif" class="left" id="img8328080725174372717"/></a>&nbsp;<span class="meta">scriptTable_3_0/scriptTable_0_0 </span>
+
+	<div class="hidden" id="8328080725174372717"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at SeleniumDriver.inputText(SeleniumDriver.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:17)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:636)
+</pre></div>
+</div><a name="scriptTable_3_0/scriptTable_0_1"/><b></b><div class="collapse_rim"><div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div><a href="javascript:toggleCollapsable('5153329989522881596');"><img src="/files/images/collapsableClosed.gif" class="left" id="img5153329989522881596"/></a>&nbsp;<span class="meta">scriptTable_3_0/scriptTable_0_1 </span>
+
+	<div class="hidden" id="5153329989522881596"><pre>__EXCEPTION__:java.lang.NullPointerException
+	at SeleniumDriver.inputText(SeleniumDriver.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:47)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:31)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:87)
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:17)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:155)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:95)
+	at java.lang.Thread.run(Thread.java:636)
+</pre></div>
+</div></div><hr/><table border="1" cellspacing="0" _TABLENUMBER=3372692261132030020>
+<tr><td colspan="6">script</td>
+</tr>
+<tr><td class=pass>Input values</td>
+<td class=pass>1</td>
+<td class=pass>&nbsp;</td>
+<td class=pass>1</td>
+<td class=pass>&nbsp;</td>
+<td class=pass>1</td>
+<TD class=pass><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('920141847855773553');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img920141847855773553"/>
+	</a>
+	<span id="test_status" class=pass>Scenario</span>
+	<div class="hidden" id="920141847855773553"><table border="1" cellspacing="0" _TABLENUMBER=5342184138455159296 table_name="scriptTable_3_0/scriptTable_0">
+<tr><td>scenario</td>
+<td>Input values</td>
+<td>@side1</td>
+<td>&nbsp;</td>
+<td>@side2</td>
+<td>&nbsp;</td>
+<td>@side3</td>
+</tr>
+<tr><td>input text</td>
+<td>triangle_side1</td>
+<td>&nbsp;</td>
+<td colspan="4">@side1</td>
+</tr>
+<tr><td>input text</td>
+<td>triangle_side2</td>
+<td>&nbsp;</td>
+<td colspan="4">@side3</td>
+</tr>
+<tr><td>input text</td>
+<td>triangle_side3</td>
+<td>&nbsp;</td>
+<td colspan="4">@side3</td>
+</tr>
+</table></div>
+</div></TD></tr>
+<tr><td class=fail>Verify triangle is identified as</td>
+<td colspan="5" class=fail>Equilateral</td>
+<TD class=fail><div class="collapse_rim">
+	<a href="javascript:toggleCollapsable('2507394083761640008');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2507394083761640008"/>
+	</a>
+	<span id="test_status" class=fail>Scenario</span>
+	<div class="hidden" id="2507394083761640008"><table border="1" cellspacing="0" _TABLENUMBER=3849540998425378749 table_name="scriptTable_3_1/scriptTable_1">
+<tr><td>scenario</td>
+<td>Verify triangle is identified as</td>
+<td colspan="3">@triangleType</td>
+</tr>
+<tr><td><span class="fail">ensure</span></td>
+<td>verify text</td>
+<td>triangle_type</td>
+<td>&nbsp;</td>
+<td>@triangletype</td>
+</tr>
+<tr><td>show</td>
+<td>get text</td>
+<td colspan="3">triangle_type</td>
+<TD>Exception: &lt;a href=#scriptTable_3_1/scriptTable_1_1&gt;scriptTable_3_1/scriptTable_1_1&lt;/a&gt;</TD></tr>
+</table></div>
+</div></TD></tr>
+</table>
+]]></content>
+    <relativePageName>HandlesAsimpleEquiliteral</relativePageName>
+    
+        <tables>
+            <table>
+        <name>scenarioTable_0</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Input values]]></col>
+                    <col><![CDATA[@side1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side2]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[input text]]></col>
+                    <col><![CDATA[triangle_side1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[input text]]></col>
+                    <col><![CDATA[triangle_side2]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[input text]]></col>
+                    <col><![CDATA[triangle_side3]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scenarioTable_1</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Verify triangle is identified as]]></col>
+                    <col><![CDATA[@triangleType]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[ensure]]></col>
+                    <col><![CDATA[verify text]]></col>
+                    <col><![CDATA[triangle_type]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@triangletype]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[get text]]></col>
+                    <col><![CDATA[triangle_type]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>library_2</name>
+                <row>
+                    <col><![CDATA[Library]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(SeleniumDriver)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3</name>
+                <row>
+                    <col><![CDATA[script]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Input values]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[1]]></col>
+                    <col><![CDATA[pass(scenario:scriptTable_3_0/scriptTable_0)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Verify triangle is identified as]]></col>
+                    <col><![CDATA[Equilateral]]></col>
+                    <col><![CDATA[fail(scenario:scriptTable_3_1/scriptTable_1)]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3_0/scriptTable_0</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Input values]]></col>
+                    <col><![CDATA[@side1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side2]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[input text]]></col>
+                    <col><![CDATA[triangle_side1]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side1]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[input text]]></col>
+                    <col><![CDATA[triangle_side2]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[input text]]></col>
+                    <col><![CDATA[triangle_side3]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@side3]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>scriptTable_3_1/scriptTable_1</name>
+                <row>
+                    <col><![CDATA[scenario]]></col>
+                    <col><![CDATA[Verify triangle is identified as]]></col>
+                    <col><![CDATA[@triangleType]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[fail(ensure)]]></col>
+                    <col><![CDATA[verify text]]></col>
+                    <col><![CDATA[triangle_type]]></col>
+                    <col><![CDATA[]]></col>
+                    <col><![CDATA[@triangletype]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[show]]></col>
+                    <col><![CDATA[get text]]></col>
+                    <col><![CDATA[triangle_type]]></col>
+                    <col><![CDATA[Exception: &lt;a href=#scriptTable_3_1/scriptTable_1_1&gt;scriptTable_3_1/scriptTable_1_1&lt;/a&gt;]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[library_2_0, make, library1, SeleniumDriver]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>library_2_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[SeleniumDriver]]></expected>
+                              <evaluationMessage><![CDATA[pass(SeleniumDriver)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0/scriptTable_0_0, call, scriptTableActor, inputText, triangle_side1, @side1]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#scriptTable_3_0/scriptTable_0_0>scriptTable_3_0/scriptTable_0_0</a>]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_0</instructionId>
+          <col>1</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_0</instructionId>
+          <col>3</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[Exception: <a href=#scriptTable_3_0/scriptTable_0_0>scriptTable_3_0/scriptTable_0_0</a>]]></actual>
+                              <expected><![CDATA[input text]]></expected>
+                              <evaluationMessage><![CDATA[input text]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0/scriptTable_0_1, call, scriptTableActor, inputText, triangle_side2, @side3]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#scriptTable_3_0/scriptTable_0_1>scriptTable_3_0/scriptTable_0_1</a>]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_1</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_1</instructionId>
+          <col>3</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[Exception: <a href=#scriptTable_3_0/scriptTable_0_1>scriptTable_3_0/scriptTable_0_1</a>]]></actual>
+                              <expected><![CDATA[input text]]></expected>
+                              <evaluationMessage><![CDATA[input text]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_0/scriptTable_0_2, call, scriptTableActor, inputText, triangle_side3, @side3]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#scriptTable_3_0/scriptTable_0_2>scriptTable_3_0/scriptTable_0_2</a>]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_2</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_2</instructionId>
+          <col>3</col>
+          <row>3</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_0/scriptTable_0_2</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>ScriptActionExpectation</type>
+                    <actual><![CDATA[Exception: <a href=#scriptTable_3_0/scriptTable_0_2>scriptTable_3_0/scriptTable_0_2</a>]]></actual>
+                              <expected><![CDATA[input text]]></expected>
+                              <evaluationMessage><![CDATA[input text]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_1/scriptTable_1_0, call, scriptTableActor, verifyText, triangle_type, @triangletype]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#scriptTable_3_1/scriptTable_1_0>scriptTable_3_1/scriptTable_1_0</a>]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>scriptTable_3_1/scriptTable_1_0</instructionId>
+          <col>0</col>
+          <row>1</row>
+          <type>EnsureActionExpectation</type>
+                    <actual><![CDATA[Exception: <a href=#scriptTable_3_1/scriptTable_1_0>scriptTable_3_1/scriptTable_1_0</a>]]></actual>
+                              <expected><![CDATA[ensure]]></expected>
+                              <evaluationMessage><![CDATA[fail(ensure)]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1/scriptTable_1_0</instructionId>
+          <col>2</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1/scriptTable_1_0</instructionId>
+          <col>4</col>
+          <row>1</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[scriptTable_3_1/scriptTable_1_1, call, scriptTableActor, getText, triangle_type]]]></instruction>
+        <slimResult><![CDATA[Exception: <a href=#scriptTable_3_1/scriptTable_1_1>scriptTable_3_1/scriptTable_1_1</a>]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1/scriptTable_1_1</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>ShowActionExpectation</type>
+                    <actual><![CDATA[Exception: <a href=#scriptTable_3_1/scriptTable_1_1>scriptTable_3_1/scriptTable_1_1</a>]]></actual>
+                              <expected><![CDATA[show]]></expected>
+                              <evaluationMessage><![CDATA[show]]></evaluationMessage>
+                  </expectation>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>scriptTable_3_1/scriptTable_1_1</instructionId>
+          <col>2</col>
+          <row>2</row>
+          <type>ArgumentExpectation</type>
+                                        <evaluationMessage><![CDATA[]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+
