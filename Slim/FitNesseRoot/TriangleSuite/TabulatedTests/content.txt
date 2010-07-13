@@ -1,0 +1,8 @@
+!|script                                                |
+|triangle|1||1||1|is|Equilateral|and drawn inside canvas|
+|triangle|3||4||5|is|Right      |and drawn inside canvas|
+|triangle|4||4||5|is|Isosceles  |and drawn inside canvas|
+|triangle|4||5||6|is|Scalene    |and drawn inside canvas|
+|triangle|0||4||5|is|Invalid                            |
+|triangle|1||4||6|is|Invalid                            |
+|triangle|2||5||6|is|Scalene    |and drawn inside canvas|
