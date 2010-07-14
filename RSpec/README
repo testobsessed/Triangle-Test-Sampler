@@ -1,0 +1,10 @@
+RSpec is a BDD tool that allows you to express tests in Ruby in a readable and natural way. For information on RSpec, see http://rspec.info/
+
+This example was created by Elisabeth Hendrickson
+
+To execute these tests:
+
+1. make sure you have Ruby installed
+2. install RSpec if you haven't already: gem install rspec
+3. cd to the RSpec directory in this project
+4. execute the following command: spec triangle_spec.rb
