@@ -4,8 +4,7 @@
 |input text|triangle_side3|     |@side3       |
 
 !|scenario|Verify triangle is identified as|triangleType                |
-|show     |get text                        |triangle_type               |
-|ensure   |verify text                     |triangle_type||@triangleType|
+|check    |get text                        |triangle_type||@triangleType|
 
 !|scenario|Verify triangle is drawn inside canvas|
 |show     |coordinates                           |
@@ -13,8 +12,8 @@
 
 !|scenario|triangle|side1|      |side2|      |side3|is|triangleType|and drawn inside canvas|
 |triangle |@side1  |     |@side2|     |@side3|is   |@triangleType                          |
-|Verify triangle is drawn inside canvas                                                    |
+|verify triangle is drawn inside canvas                                                    |
 
 !|scenario                       |triangle|side1|      |side2||side3|is|triangleType|
 |Input values                    |@side1  |     |@side2|     |@side3                |
-|Verify triangle is identified as|@triangleType                                     |
+|verify triangle is identified as|@triangleType                                     |

@@ -1,0 +1,14 @@
+!|import               |
+|org.triangleTests.slim|
+
+!|Library      |
+|SeleniumDriver|
+
+!define url {http://practice.agilistry.com/triangle/}
+!define browser {firefox}
+
+!|script                               |
+|start selenium server                 |
+|open browser       |${browser}||${url}|
+|set  selenium speed|1000              |
+|maximize browser window               |

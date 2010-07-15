@@ -1,0 +1,6 @@
+This suite holds all the Slim tests.
+----
+!define TEST_SYSTEM {slim}
+
+!contents -R2 -g -p -f -h
+

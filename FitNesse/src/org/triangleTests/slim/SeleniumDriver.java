@@ -42,10 +42,6 @@ public class SeleniumDriver {
     testedPage.type(locator, text);
   }
 
-  public boolean verifyText(String locator, String expected) {
-    return expected.equals(getText(locator));
-  }
-
   public String getText(String locator) {
     return testedPage.getText(locator);
   }
