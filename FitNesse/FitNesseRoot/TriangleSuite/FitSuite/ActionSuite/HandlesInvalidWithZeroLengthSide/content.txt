@@ -1,0 +1,9 @@
+!|fit.ActionFixture                                                                               |
+|start|org.triangleTests.fit.SeleniumActionFixture|firefox|http://practice.agilistry.com/triangle/|
+|enter|selenium speed                             |1000                                           |
+|press|maximize browser window                                                                    |
+|enter|side1                                      |0                                              |
+|enter|side2                                      |4                                              |
+|enter|side3                                      |5                                              |
+|check|triangle is                                |Invalid                                        |
+|press|close                                                                                      |

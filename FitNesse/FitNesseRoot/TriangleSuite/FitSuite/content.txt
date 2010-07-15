@@ -1,0 +1,6 @@
+This suite holds all the FIT tests.
+
+----
+!define TEST_SYSTEM {fit}
+
+!contents -R2 -g -p -f -h

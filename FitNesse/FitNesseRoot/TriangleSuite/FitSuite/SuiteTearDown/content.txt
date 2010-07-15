@@ -1,0 +1,3 @@
+!|fit.ActionFixture                               |
+|start|org.triangleTests.fit.SeleniumServerFixture|
+|press|stop                                       |

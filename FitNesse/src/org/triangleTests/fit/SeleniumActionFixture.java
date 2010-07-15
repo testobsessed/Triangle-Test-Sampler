@@ -1,16 +1,17 @@
-package org.triangleTests.slim;
+package org.triangleTests.fit;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.openqa.selenium.server.SeleniumServer;
-
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 
-public class SeleniumDriver {
+import fit.ActionFixture;
 
-  private SeleniumServer server;
+public class SeleniumActionFixture extends ActionFixture {
+
+  private static final String TESTED_PAGE_URL = "http://practice.agilistry.com/triangle/";
+
   private Selenium testedPage;
 
   private Pattern digitPattern = Pattern.compile("^\\d.*$");
@@ -18,19 +19,30 @@ public class SeleniumDriver {
   private Pattern coordinatePattern = Pattern
       .compile("(-*[0-9]+),(-*[0-9]+)\\) \\((-*[0-9]+),(-*[0-9]+)\\) \\((-*[0-9]+),(-*[0-9]+)");
 
-  public void startSeleniumServer() throws Exception {
-    server = new SeleniumServer();
-    server.start();
-  }
-
-  public void openBrowser(String browser, String url) {
-    testedPage = new DefaultSelenium("localhost", server.getPort(), browser,
-        url);
+  public SeleniumActionFixture() {
+    testedPage = new DefaultSelenium("localhost", SeleniumServerFixture
+        .getServer().getPort(), "firefox", TESTED_PAGE_URL);
     testedPage.start();
-    testedPage.open(url);
+    testedPage.open(TESTED_PAGE_URL);
   }
 
-  public void setSeleniumSpeed(String speed) {
+  public void side1(String value) {
+    testedPage.type("triangle_side1", value);
+  }
+
+  public void side2(String value) {
+    testedPage.type("triangle_side2", value);
+  }
+
+  public void side3(String value) {
+    testedPage.type("triangle_side3", value);
+  }
+
+  public String triangleIs() {
+    return testedPage.getText("triangle_type");
+  }
+
+  public void seleniumSpeed(String speed) {
     testedPage.setSpeed(speed);
   }
 
@@ -38,17 +50,8 @@ public class SeleniumDriver {
     testedPage.windowMaximize();
   }
 
-  public boolean stopSeleniumServer() {
-    server.stop();
-    return true;
-  }
-
-  public void inputText(String locator, String text) {
-    testedPage.type(locator, text);
-  }
-
-  public String getText(String locator) {
-    return testedPage.getText(locator);
+  public void close() {
+    testedPage.stop();
   }
 
   public String coordinates() {
@@ -56,7 +59,7 @@ public class SeleniumDriver {
         .getText("//div[@id='triangles_list']/div[contains(@class, 'triangle_row')][1]/div[contains(@class, 'triangle_data_cell')][5]");
   }
 
-  public boolean coordinatesAreValid() {
+  public boolean triangleIsDrawnInsideCanvas() {
     String coordinates = coordinates();
 
     Matcher matcher = matchCoordinates(coordinates);
@@ -82,4 +85,5 @@ public class SeleniumDriver {
   private boolean isPositiveDigit(String singleMatch) {
     return digitPattern.matcher(singleMatch).find();
   }
+
 }
