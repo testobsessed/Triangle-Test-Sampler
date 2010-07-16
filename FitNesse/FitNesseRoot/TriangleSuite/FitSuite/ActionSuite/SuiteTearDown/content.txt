@@ -1,0 +1,6 @@
+!|fit.ActionFixture|
+|press    |close   |
+
+!include -seamless .TriangleSuite.FitSuite.SuiteTearDown
+
+

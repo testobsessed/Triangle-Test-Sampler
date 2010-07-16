@@ -1,9 +1,5 @@
 !|fit.ActionFixture                                                                               |
-|start|org.triangleTests.fit.SeleniumActionFixture|firefox|http://practice.agilistry.com/triangle/|
-|enter|selenium speed                             |1000                                           |
-|press|maximize browser window                                                                    |
 |enter|side1                                      |4                                              |
 |enter|side2                                      |5                                              |
 |enter|side3                                      |6                                              |
 |check|triangle is                                |Scalene                                        |
-|press|close                                                                                      |

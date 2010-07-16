@@ -1,0 +1,9 @@
+!|org.triangleTests.fit.TriangleColumnFixture|firefox|http://practice.agilistry.com/triangle/  |
+|side1                                       |side2  |side3|identified as?|drawn inside canvas?|
+|1                                           |1      |1    |Equilateral   |true                |
+|3                                           |4      |5    |Right         |true                |
+|4                                           |4      |5    |Isosceles     |true                |
+|4                                           |5      |6    |Scalene       |true                |
+|0                                           |4      |5    |Invalid       |false               |
+|1                                           |4      |6    |Invalid       |false               |
+|2                                           |5      |6    |Scalene       |true                |
