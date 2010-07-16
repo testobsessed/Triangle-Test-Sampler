@@ -1,0 +1,4 @@
+!|org.triangleTests.fitlibrary.TriangleDoFixture|
+|input values                      |2 | |5 | |6 |
+|verify triangle is identified as  |Scalene     |
+|verify triangle is drawn inside canvas         |

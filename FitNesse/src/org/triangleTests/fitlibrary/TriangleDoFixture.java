@@ -1,4 +1,4 @@
-package org.triangleTests.fit;
+package org.triangleTests.fitlibrary;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -6,46 +6,46 @@ import java.util.regex.Pattern;
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 
-import fit.ColumnFixture;
+import fitlibrary.DoFixture;
 
-public class TriangleColumnFixture extends ColumnFixture {
+public class TriangleDoFixture extends DoFixture {
 
-  public String side1;
-
-  public String side2;
-
-  public String side3;
-
-  private Selenium testedPage = null;
+  private static Selenium testedPage;
 
   private Pattern digitPattern = Pattern.compile("^\\d.*$");
 
   private Pattern coordinatePattern = Pattern
       .compile("(-*[0-9]+),(-*[0-9]+)\\) \\((-*[0-9]+),(-*[0-9]+)\\) \\((-*[0-9]+),(-*[0-9]+)");
 
-  public String identifiedAs() {
-    return testedPage.getText("triangle_type");
+  public static boolean openBrowser(String browser, String url) {
+    testedPage = new DefaultSelenium("localhost",
+        SeleniumServerFixture.getServerPort(), browser, url);
+    testedPage.start();
+    testedPage.open(url);
+    return true;
   }
 
-  public void execute() {
-    initTestPage();
+  public static void setSeleniumSpeed(String speed) {
+    testedPage.setSpeed(speed);
+  }
+
+  public static void browserWindowMaximize() {
+    testedPage.windowMaximize();
+  }
+
+  public static boolean closeBrowser() {
+    testedPage.close();
+    return true;
+  }
+
+  public void inputValues(String side1, String side2, String side3) {
     testedPage.type("triangle_side1", side1);
     testedPage.type("triangle_side2", side2);
     testedPage.type("triangle_side3", side3);
   }
 
-  private void initTestPage() {
-    if (testedPage == null) {
-      String browser = getArgs()[0];
-      String page = getArgs()[1];
-
-      testedPage = new DefaultSelenium("localhost", SeleniumServerFixture
-          .getServer().getPort(), browser, page);
-      testedPage.start();
-      testedPage.open(page);
-      testedPage.setSpeed("1000");
-      testedPage.windowMaximize();
-    }
+  public boolean verifyTriangleIsIdentifiedAs(String triangleType) {
+    return triangleType.equals(testedPage.getText("triangle_type"));
   }
 
   public String coordinates() {
@@ -53,7 +53,7 @@ public class TriangleColumnFixture extends ColumnFixture {
         .getText("//div[@id='triangles_list']/div[contains(@class, 'triangle_row')][1]/div[contains(@class, 'triangle_data_cell')][5]");
   }
 
-  public boolean drawnInsideCanvas() {
+  public boolean verifyTriangleIsDrawnInsideCanvas() {
     String coordinates = coordinates();
 
     Matcher matcher = matchCoordinates(coordinates);

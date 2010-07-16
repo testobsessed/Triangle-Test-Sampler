@@ -1,0 +1,7 @@
+This suite holds all the !-FitLibrary-! tests.
+----
+!define TEST_SYSTEM {fit}
+
+!define TEST_RUNNER {fitlibrary.suite.FitLibraryServer}
+
+!contents -R2 -g -p -f -h

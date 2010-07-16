@@ -1,4 +1,4 @@
-package org.triangleTests.fit;
+package org.triangleTests.fitlibrary;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -6,46 +6,49 @@ import java.util.regex.Pattern;
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 
-import fit.ColumnFixture;
+import fitlibrary.CalculateFixture;
 
-public class TriangleColumnFixture extends ColumnFixture {
+public class CalculateTriangleFixture extends CalculateFixture {
 
-  public String side1;
-
-  public String side2;
-
-  public String side3;
-
-  private Selenium testedPage = null;
+  private Selenium testedPage;
 
   private Pattern digitPattern = Pattern.compile("^\\d.*$");
 
   private Pattern coordinatePattern = Pattern
       .compile("(-*[0-9]+),(-*[0-9]+)\\) \\((-*[0-9]+),(-*[0-9]+)\\) \\((-*[0-9]+),(-*[0-9]+)");
 
-  public String identifiedAs() {
+  public String triangleTypeSide1Side2Side3(String side1, String side2,
+      String side3) {
+    initTestedPage();
+    inputTriangleSideLengths(side1, side2, side3);
     return testedPage.getText("triangle_type");
   }
 
-  public void execute() {
-    initTestPage();
+  private void initTestedPage() {
+    if (testedPage == null) {
+      String browser = getArgs()[0];
+      String page = getArgs()[1];
+      String speed = getArgs()[2];
+
+      testedPage = new DefaultSelenium("localhost",
+          SeleniumServerFixture.getServerPort(), browser, page);
+      testedPage.start();
+      testedPage.open(page);
+      testedPage.setSpeed(speed);
+      testedPage.windowMaximize();
+    }
+  }
+
+  private void inputTriangleSideLengths(String side1, String side2, String side3) {
     testedPage.type("triangle_side1", side1);
     testedPage.type("triangle_side2", side2);
     testedPage.type("triangle_side3", side3);
   }
 
-  private void initTestPage() {
-    if (testedPage == null) {
-      String browser = getArgs()[0];
-      String page = getArgs()[1];
-
-      testedPage = new DefaultSelenium("localhost", SeleniumServerFixture
-          .getServer().getPort(), browser, page);
-      testedPage.start();
-      testedPage.open(page);
-      testedPage.setSpeed("1000");
-      testedPage.windowMaximize();
-    }
+  public boolean drawnInsideCanvasSide1Side2Side3(String side1, String side2,
+      String side3) {
+    inputTriangleSideLengths(side1, side2, side3);
+    return drawnInsideCanvas();
   }
 
   public String coordinates() {

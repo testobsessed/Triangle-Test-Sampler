@@ -1,0 +1,6 @@
+!include -seamless .TriangleSuite.FitLibrarySuite.SuiteSetUp
+
+!|org.triangleTests.fitlibrary.TriangleDoFixture              |
+|open browser|firefox||http://practice.agilistry.com/triangle/|
+|set selenium speed|1000|
+|browser window maximize|

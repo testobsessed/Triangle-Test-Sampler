@@ -1,0 +1,4 @@
+!|org.triangleTests.fitlibrary.TriangleDoFixture|
+|close browser                                  |
+
+!include -seamless .TriangleSuite.FitLibrarySuite.SuiteTearDown

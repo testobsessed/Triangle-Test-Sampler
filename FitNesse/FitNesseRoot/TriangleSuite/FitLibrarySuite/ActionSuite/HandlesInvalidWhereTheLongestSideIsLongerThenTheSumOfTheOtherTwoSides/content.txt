@@ -1,0 +1,3 @@
+!|org.triangleTests.fitlibrary.TriangleDoFixture|
+|input values                      |1 | |4 | |6 |
+|verify triangle is identified as  |Invalid     |
