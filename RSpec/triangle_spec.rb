@@ -36,27 +36,27 @@ describe "Triangle Test:" do
        @triangle.coordinates_valid?.should be_true, "Coordinates on drawn triangle were out of range: #{@triangle.coordinates_as_string}"
      end 
      
-     it "Equilaterals" do
+     it "can handle Equilaterals" do
         @triangle.enter_sides("1","1","1")
         @triangle.get_type.should == "Equilateral"
      end
        
-     it "Right Triangles" do
+     it "can handle Right Triangles" do
          @triangle.enter_sides("3","4","5")
          @triangle.get_type.should == "Right"
      end
      
-     it "acute Scalene triangles" do
+     it "can handle acute Scalene triangles" do
          @triangle.enter_sides("4","5","6")
          @triangle.get_type.should == "Scalene"
      end
      
-     it "obtuse Scalene triangles" do
+     it "can handle obtuse Scalene triangles" do
          @triangle.enter_sides("2","5","6")
          @triangle.get_type.should == "Scalene"
      end
      
-     it "Scalene with floating point" do
+     it "can handle Scalene with floating point" do
         @triangle.enter_sides("4.2","5.6","6.1")
         @triangle.get_type.should == "Scalene"
      end

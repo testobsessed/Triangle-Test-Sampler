@@ -1,7 +1,26 @@
+Welcome!
+
+This project is intended to be a kind of Rosetta Stone for various agile-friendly functional testing tools, showing how you can express the same set of actions and expectations in each tool. It's rare that you get to see the same tests expressed in multiple tools; the intent for is for the examples to provide a basis for comparison of functional testing tools.
+
+This guide has the following sections:
+1. The App Under Test
+2. The Tests
+3. Technical Notes
+4. How You Can Use These Samples
+5. Support Requests
+6. How to Contribute
+
+===========================
+The App Under Test
+------------------
+All these tests work against the publicly available http://practice.agilistry.com/triangle/ application, a web 2.0 (ajax) implementation of the classic triangle testing problem.
 
 ===========================
 The Tests
 ---------
+
+Each tool implements the following tests:
+
 Feature: Handles a simple Equilateral
 Input:  1, 1, 1
 Verify: the app draws the triangle and identifies it as "Equilateral"
@@ -33,5 +52,53 @@ Verify: the app draws the triangle entirely within the canvas.
 These tests cover the most basic expectations of the triangle engine. There are, of course, other interesting tests for triangle: invalid inputs, decimal values, negative values, very large values, and various other configurations of invalid triangles & valid triangle with different angles. 
 
 There are also potentially interesting tests one could run to characterize the behavior of the app as a whole: varying timing to see its affect on history, assessing behavior with numerous simultaneous sessions, etc. However, additional tests are left as an exercise for the reader.
+
+===========================
+Technical Notes
+---------------
+These tests all assume that you have the test tools installed: we're not distributing the test tools with the sample tests.
+
+All the examples will require you to execute commands at the command line. Instructions for executing the individual tests (along with additional technical notes) are included in the README in each individual tool directory.
+
+These tests all go through the web-based interface. So you will also need to install SeleniumRC version 1.0.3 or greater to drive the GUI. Before you execute any of these tests make sure you have the selenium server running. These tests attempt to connect to selenium server running locally on port 4444 (the default port for selenium server).
+
+Note that the decision to go through an external GUI was motivated by a desire to create the most portable test cases possible. Our intent was to reduce dependencies and increase ease-of-use, not to promote through-the-GUI test automation. On real world projects, it's usually best to do most of the functional testing below the GUI with only GUI tests and a teeny tiny number of end-to-end tests going through the GUI. All the tools referenced in this project support such below-the-GUI testing in addition to GUI-based test automation using a driver library.
+
+===========================
+How You Can Use These Samples
+-----------------------------
+All the materials in this project are released under the Creative Commons Attribution license. See http://creativecommons.org/licenses/by/3.0/
+
+This means that in addition to using these examples for your own learning, you can also use these examples in teaching and presentations as long as you attribute them to the "Triangle Test Sample Project" and provide the github URL (http://github.com/ehendri/Triangle-Test-Sampler)
+
+===========================
+Support Requests
+----------------
+If you have questions about this project, you are welcome to contact me at esh@qualitytree.com. I will do my best to answer your questions in a timely manner. Not only are you welcome to contact me - but I encourage it! When you ask questions or make suggestions, you give me an opportunity to improve the usefulness of this project.
+
+(However, please note that I am not in a position to provide general free tech support on test automation tools. If I sense that your question has more to do with a specific tool and less to do with the samples, I may refer you to the discussion list for the tool in question.)
+
+===========================
+How to Contribute
+-----------------
+Want to contribute tests for a tool that you don't see listed here? Or perhaps you'd like to improve on the tests for a particular tool that is already here? 
+
+The best way to contribute is to set up your own repository on github, fork the project, add your stuff, then make a pull request.
+
+For information about getting started with github, see http://help.github.com/. For information about github pull requests, see http://github.com/guides/pull-requests.
+
+Note that by making a pull request, you are agreeing to let me include your work in this project, released under the Creative Commons Attribution license.
+
+Happy Testing!
+
+Elisabeth Hendrickson
+Quality Tree Software, Inc.
+4713 First Street
+Suite 275
+Pleasanton, CA 94566
+http://www.qualitytree.com
+http://www.agilistry.com
+http://www.testobsessed.com
+
 
 

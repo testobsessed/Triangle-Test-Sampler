@@ -9,17 +9,16 @@ class TrianglePage
   end
   
   def enter_sides(side1,side2,side3)
-    @page.type "triangle_side2", side2
-    @page.type "triangle_side3", side3
-    @page.type "triangle_side1", side1
-    wait_until "results_rows_updated?(3)"
+    enter(side2, "side2")
+    enter(side1, "side1")
+    enter(side3, "side3")
     wait_until("drawn?") if get_type != "Invalid"
-    @results_row_count = count_results_rows
   end
   
   def enter(side_value, side_id)
     @page.type "triangle_" + side_id, side_value
     wait_until "results_rows_updated?(1)"
+    @results_row_count = count_results_rows
   end
   
   def get_type()
