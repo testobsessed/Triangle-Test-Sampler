@@ -1,4 +1,4 @@
-FitNesse is a Java-based wiki and test automation framework. FitNesse supports multiple test systems, currently this includes the Framework for Integrated Tests (FIT) together with FitLibrary, as well as the Simple Line Invocation Method (Slim). With FitNesse tests may be defined as wiki text.
+FitNesse is a Java-based wiki and test automation framework. FitNesse supports multiple test systems, currently this includes the Framework for Integrated Tests (FIT) together with FitLibrary, as well as the Simple List Invocation Method (Slim). With FitNesse tests may be defined as wiki text.
 
 Additional information is available at http://fitnesse.org/
 
