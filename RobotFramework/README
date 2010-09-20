@@ -10,4 +10,3 @@ To execute these tests:
 2. Install the Robot Framework Selenium Library (see http://code.google.com/p/robotframework-seleniumlibrary/)
 3. cd to the RobotFramework directory in this project
 4. execute the following command: pybot triangle_tests.txt
-
