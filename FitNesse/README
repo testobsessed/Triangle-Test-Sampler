@@ -1,0 +1,16 @@
+FitNesse is a Java-based wiki and test automation framework. FitNesse supports multiple test systems, currently this includes the Framework for Integrated Tests (FIT) together with FitLibrary, as well as the Simple Line Invocation Method (Slim). With FitNesse tests may be defined as wiki text.
+
+Additional information is available at http://fitnesse.org/
+
+These examples were created by Markus Gaertner.
+
+In order to execute the test invoke
+  ant
+to compile the support code. After that you may start the web server by invoking
+  java -jar fitnesse.jar -p <port-number>
+Open your browser at http://localhost:<port-number> and navigate to the TriangleSuite. The tests are divided into three suites showing the different test systems:
+  * FIT with Column- and ActionFixtures
+  * FitLibrary with DoFixture and tabulated test using CalculateFixture
+  * Slim with scenario tables and script tables
+
+You can find the source code to in the src-folder or by opening this project directory with eclipse.
