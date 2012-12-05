@@ -1,0 +1,14 @@
+<ivy-module version="2.0">
+  <info organisation="cukes.info" module="java-example"/>
+  <dependencies>
+    <dependency org="info.cukes" name="cucumber-java" rev="1.1.1"/>
+    <dependency org="junit" name="junit" rev="4.10"/>
+    
+    <dependency org="org.seleniumhq.selenium" name="selenium-java" rev="2.25.0" />
+    <dependency org="org.seleniumhq.selenium" name="selenium-api" rev="2.25.0" />
+    <dependency org="org.seleniumhq.selenium" name="selenium-server" rev="2.25.0" />
+    <dependency org="org.seleniumhq.selenium" name="selenium-remote-driver" rev="2.25.0" />
+    <dependency org="org.seleniumhq.selenium" name="selenium-support" rev="2.25.0" />
+    <dependency org="org.seleniumhq.selenium" name="selenium-firefox-driver" rev="2.25.0" />
+  </dependencies>
+</ivy-module>

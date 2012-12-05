@@ -1,0 +1,62 @@
+<project name="concordion-kickstart" default="build" basedir=".">
+
+	<property name="build.dir" value="build" />
+	<property name="specs.dir" value="specs" />
+    <property name="results.dir" value="results"/>
+
+    <path id="compile.classpath">
+        <fileset dir="lib" includes="*.jar"/>
+    </path>
+
+    <target name="clean" description="Remove old build artifacts">
+        <delete dir="${build.dir}" />
+    	<delete dir="${results.dir}" />
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+
+        <javac classpathref="compile.classpath"
+               destdir="${build.dir}"
+               srcdir="${specs.dir}"
+               debug="yes"
+               failonerror="yes"
+               source="1.5"
+               target="1.5"
+               includeantruntime="no"
+        />
+    	
+        <copy todir="${build.dir}">
+            <fileset dir="${specs.dir}" />
+        </copy>
+
+    </target>
+
+    <target name="run.tests" depends="compile">
+        <mkdir dir="${results.dir}"/>
+
+        <junit fork="yes" forkmode="once" printsummary="yes" haltonfailure="yes" showoutput="yes">
+            <jvmarg value="-Dconcordion.output.dir=${results.dir}"/>
+
+            <classpath>
+                <path refid="compile.classpath"/>
+                <pathelement location="${build.dir}"/>
+            </classpath>
+
+            <formatter type="plain" />
+
+            <batchtest todir="${results.dir}">
+                <fileset dir="${specs.dir}">
+                    <include name="**/*Test.java"/>
+                    <exclude name="**/Abstract*"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="build"
+        description="Builds everything from scratch"
+        depends="compile, run.tests"
+    />
+
+</project>

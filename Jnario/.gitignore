@@ -1,0 +1,11 @@
+classes
+target
+src/main/xtend-gen/*
+src/test/xtend-gen/*
+.metadata
+org.eclipse.xtext.*
+org.eclipse.xtend.*
+.DS_Store
+*._trace
+*.smap
+

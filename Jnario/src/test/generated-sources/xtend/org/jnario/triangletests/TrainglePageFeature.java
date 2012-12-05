@@ -1,0 +1,20 @@
+package org.jnario.triangletests;
+
+import org.jnario.runner.Contains;
+import org.jnario.runner.FeatureRunner;
+import org.jnario.runner.Named;
+import org.jnario.triangletests.TrainglePageFeatureDrawEquilateralTriangle;
+import org.jnario.triangletests.TrainglePageFeatureDrawsAScaleneTriangleWithFloatingPointValues;
+import org.jnario.triangletests.TrainglePageFeatureDrawsAnotherScaleneTriangle;
+import org.jnario.triangletests.TrainglePageFeatureDrawsRightTriangle;
+import org.jnario.triangletests.TrainglePageFeatureDrawsScaleneTriangle;
+import org.jnario.triangletests.TrainglePageFeatureNoticesAnInvalidTriangleWithInvliadSideLengths;
+import org.jnario.triangletests.TrainglePageFeatureNoticesAnInvalidTriangleWithZeroSideLength;
+import org.junit.runner.RunWith;
+
+@RunWith(FeatureRunner.class)
+@Contains({ TrainglePageFeatureDrawEquilateralTriangle.class, TrainglePageFeatureDrawsRightTriangle.class, TrainglePageFeatureDrawsScaleneTriangle.class, TrainglePageFeatureDrawsAnotherScaleneTriangle.class, TrainglePageFeatureDrawsAScaleneTriangleWithFloatingPointValues.class, TrainglePageFeatureNoticesAnInvalidTriangleWithZeroSideLength.class, TrainglePageFeatureNoticesAnInvalidTriangleWithInvliadSideLengths.class })
+@Named("Traingle Page")
+@SuppressWarnings("all")
+public class TrainglePageFeature {
+}

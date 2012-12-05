@@ -1,0 +1,8 @@
+Concordion is a functional test automation tool based upon HTML specifications. Hooks to the automation layer are annotated in the HTML file directly. 
+
+For more information on Concordion, see http://concordion.org
+
+This examples was created by Markus Gärtner
+Assistance with Selenium 2 by Andreas Simon
+
+To execute these tests run ant with the default target.

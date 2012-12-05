@@ -1,0 +1,9 @@
+JDave is a BDD tool that brings RSpec like notations to the JVM. For information on JDave, visit http://www.jdave.org/ 
+
+This example was created by Markus Gärtner.
+
+To execute these tests:
+
+1. make sure you have maven installed
+2. cd to the JDave directory in this project
+3. execute the following command: mvn clean verify

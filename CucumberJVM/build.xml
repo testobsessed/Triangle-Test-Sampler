@@ -1,0 +1,63 @@
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="Triangle Test Sampler Cuke4Duke" default="cucumber" basedir=".">
+
+	<target name="-compile-steps" depends="-define-paths">
+		<mkdir dir="target/test-classes" />
+		<javac srcdir="src/test/java" destdir="target/test-classes" classpathref="compile.classpath" encoding="UTF-8" />
+	</target>
+
+	<target name="cucumber" depends="-compile-steps" description="Run Cucumber">
+		<mkdir dir="target/junit-report" />
+
+		<java classname="cucumber.api.cli.Main" fork="true" failonerror="false" resultproperty="cucumber.exitstatus">
+			<classpath>
+				<path refid="compile.classpath" />
+				<pathelement location="target/test-classes" />
+			</classpath>
+			<arg value="--format" />
+			<arg value="junit:target/junit-report.xml" />
+			<arg value="--format" />
+			<arg value="pretty" />
+			<arg value="--glue" />
+			<arg value="org.triangleTests.cucumberJVM" />
+			<arg value="features" />
+		</java>
+
+		<junitreport todir="target/junit-report">
+			<fileset dir="target">
+				<include name="junit-report.xml" />
+			</fileset>
+			<report format="frames" todir="target/junit-report" />
+		</junitreport>
+
+		<fail message="Cucumber failed">
+			<condition>
+				<not>
+					<equals arg1="${cucumber.exitstatus}" arg2="0" />
+				</not>
+			</condition>
+		</fail>
+	</target>
+
+	<target name="-download-jars" if="ivy">
+		<ivy:retrieve />
+	</target>
+
+	<target name="-define-paths" depends="-download-jars">
+		<path id="compile.classpath">
+			<fileset dir="lib">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+	</target>
+
+	<target name="clean" description="Delete all generated artifacts">
+		<delete dir="${basedir}/target" />
+	</target>
+
+	<target name="clean-deps" description="Delete all dependencies">
+		<delete>
+			<fileset dir="${basedir}/lib" includes=".jar" />
+		</delete>
+	</target>
+
+</project>

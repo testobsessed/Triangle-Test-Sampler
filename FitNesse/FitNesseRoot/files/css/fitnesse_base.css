@@ -58,7 +58,6 @@ table {
   margin: 5px;
   padding: 0px;
   border-width: 1px 0px 0px 1px;
-  white-space:pre;
 }
 
 table.plain_text_table {
@@ -119,6 +118,10 @@ td.confirmation-form, th.confirmation-form {
   border: solid 0px #C6CCB7;
   padding: 0px;
   margin: 0px;
+}
+
+td.numeric, th.numeric {
+  text-align:right;
 }
 
 h1, h2, h3, h4 {
@@ -653,7 +656,6 @@ table.dirListing {
   border: 0px;
   width: 99%;
   font-size: 1.0em;
-  white-space:nowrap;
 }
 
 .dirListing td, .dirListing th {
@@ -669,17 +671,14 @@ table.dirListing {
 
 .pass {
   background-color: #AAFFAA;
-  white-space:nowrap;
 }
 
 .fail {
   background-color: #FFAAAA;
-  white-space:nowrap;
 }
 
 .error {
   background-color: #FFFFAA;
-  white-space:nowrap;
 }
 
 .ignore {
@@ -697,4 +696,67 @@ table.dirListing {
 
 .fit_grey {
   color: #808080;
+}
+
+.passed_tests,
+.unrun_tests,
+.failed_tests {
+  background-repeat: no-repeat;
+  padding-left: 22px;
+  margin: 0px 4px;
+}
+
+.passed_tests {
+  background-image: url('../images/pass.png');
+}
+
+.unrun_tests {
+  background-image: url('../images/unrun.png');	
+}
+
+.failed_tests {
+  background-image: url('../images/fail.png');	
+}
+
+.completion_folder{
+  margin: 2px 5px;
+}
+
+.completion_test{
+  margin: 0px 25px;
+}
+
+a.fail,
+.fail {
+  background-color: #ffcbd0;
+}
+
+.unrun,
+a.unrun
+{
+  background-color: #fff3b4;
+}
+
+.overview_part {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height: 1.4em;
+}
+
+.overview_bar {
+	border: 1px solid black;
+	height: 1.4em;
+	margin: 0 -.5px;
+}
+
+.overview_results table td {
+	border : none;
+	background-position: 1px;
+}
+
+.overview_results table {
+	border : 1px solid black;
+	margin : 10px 0px;
+	padding : 10px;
 }

@@ -4,11 +4,11 @@
 !|Library      |
 |SeleniumDriver|
 
+!define selenium.port {4444}
 !define url {http://practice.agilistry.com/triangle/}
 !define browser {firefox}
 
-!|script                               |
-|start selenium server                 |
-|open browser       |${browser}||${url}|
-|set  selenium speed|1000              |
-|maximize browser window               |
+!|script                                                 |
+|open browser       |${selenium.port}||${browser}||${url}|
+|set  selenium speed|1000                                |
+|maximize browser window                                 |

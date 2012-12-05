@@ -1,0 +1,8 @@
+<ivysettings>
+  <settings defaultResolver="all-repos"/>
+  <resolvers>
+    <chain name="all-repos">
+      <ibiblio name="ibiblio" m2compatible="true" usepoms="false"/>
+    </chain>
+  </resolvers>
+</ivysettings>

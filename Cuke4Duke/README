@@ -1,0 +1,10 @@
+Cuke4Duke is a cucumber implementation using JAva based step definitions. It provides a BDD tool that supports expressing tests in natural language in the format Given/When/Then. These natural language statements are connected to code that automates the tests in the step files.
+
+You can find additional information about Cuke4Duke at https://github.com/cucumber/cuke4duke, and additional information about Cucumber at http://cukes.info/
+
+This example was created by Markus Gärtner.
+
+To run these tests:
+1. make sure you have java installed.
+3. cd to the Cuke4Duke directory
+4. execute the command: ant

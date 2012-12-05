@@ -1,7 +1,6 @@
 !include -seamless .TriangleSuite.FitSuite.SuiteSetUp
 
 !|fit.ActionFixture                                          |
-|start|org.triangleTests.fit.SeleniumActionFixture           |
 |enter|browser       |firefox                                |
 |enter|url           |http://practice.agilistry.com/triangle/|
 |press|open                                                  |

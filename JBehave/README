@@ -1,0 +1,10 @@
+JBehave is a BDD framework for Java, Groovy, and Scala. It is similar to Cucumber for the examples. In the Java code you annotate your steps similar to cucumber, but have to hook them up in a separate class. The name of the class is derived from the name of your file containing the examples.
+
+You can find additional information about JBehave at http://jbehave.org/
+
+This example was created by Markus Gärtner.
+
+To run these tests:
+1. make sure you have java installed.
+3. cd to the JBehave directory
+4. execute the command: ant

@@ -39,8 +39,7 @@ public class TriangleColumnFixture extends ColumnFixture {
       String browser = getArgs()[0];
       String page = getArgs()[1];
 
-      testedPage = new DefaultSelenium("localhost", SeleniumServerFixture
-          .getServer().getPort(), browser, page);
+      testedPage = new DefaultSelenium("localhost", 4444, browser, page);
       testedPage.start();
       testedPage.open(page);
       testedPage.setSpeed("1000");

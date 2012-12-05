@@ -1,0 +1,9 @@
+Jnario is a BDD tool that brings RSpec and Cucumber like notations to the JVM. For information on Jnario, visit http://www.jnario.org/ 
+
+This example was created by Markus Gärtner and Sebastian Benz.
+
+To execute these tests:
+
+1. make sure you have maven installed
+2. cd to the Jnario directory in this project
+3. execute the following command: mvn clean verify

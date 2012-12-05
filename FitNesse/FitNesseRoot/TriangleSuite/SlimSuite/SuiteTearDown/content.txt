@@ -1,2 +1,2 @@
-!|script             |
-|stop selenium server|
+!|script      |
+|close browser|

@@ -22,8 +22,7 @@ public class SeleniumActionFixture extends ActionFixture {
       .compile("(-*[0-9]+),(-*[0-9]+)\\) \\((-*[0-9]+),(-*[0-9]+)\\) \\((-*[0-9]+),(-*[0-9]+)");
 
   public void open() {
-    testedPage = new DefaultSelenium("localhost", SeleniumServerFixture
-        .getServer().getPort(), browser, url);
+    testedPage = new DefaultSelenium("localhost", 4444, browser, url);
     testedPage.start();
     testedPage.open(url);
   }

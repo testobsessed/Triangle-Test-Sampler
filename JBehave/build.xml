@@ -1,0 +1,62 @@
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="Triangle Test Sampler JBehave" default="build" basedir=".">
+
+	<target name="-download-jars" if="ivy">
+		<ivy:retrieve />
+	</target>
+
+	<target name="-define-paths" depends="-download-jars">
+		<path id="compile.classpath">
+			<fileset dir="lib">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+
+		<path id="jbehave.classpath">
+			<path refid="compile.classpath" />
+			<pathelement location="${build.dir}" />
+		</path>
+	</target>
+
+	<property name="build.dir" value="build" />
+	<property name="specs.dir" value="specification" />
+	<property name="results.dir" value="results" />
+
+	<path id="compile.classpath">
+		<fileset dir="lib" includes="*.jar" />
+	</path>
+
+	<target name="clean" description="Remove old build artifacts">
+		<delete dir="${build.dir}" />
+		<delete dir="${results.dir}" />
+	</target>
+
+	<target name="compile" depends="-define-paths">
+		<mkdir dir="${build.dir}" />
+
+		<javac classpathref="compile.classpath" destdir="${build.dir}" srcdir="${specs.dir}" debug="yes" failonerror="yes" source="1.5" target="1.5" includeantruntime="no" />
+
+		<copy todir="${build.dir}">
+			<fileset dir="${specs.dir}">
+				<include name="**/*" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="acceptance_tests" depends="compile">
+		<mkdir dir="${results.dir}" />
+		<junit forkmode="once" fork="yes" printsummary="no" haltonfailure="no" haltonerror="no" dir="${basedir}">
+			<classpath refid="jbehave.classpath" />
+			<formatter type="xml" usefile="true" />
+			<formatter type="plain" usefile="false" />
+			<batchtest todir="${results.dir}">
+				<fileset dir="${specs.dir}">
+					<include name="**/*Tests.*" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
+	<target name="build" description="Builds everything from scratch" depends="compile, acceptance_tests" />
+
+</project>
